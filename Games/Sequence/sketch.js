@@ -139,13 +139,13 @@ function textBounds(number, x, y, fontSize) {
   return {
     x: x - w / 2,
     y: y - h / 2,
-    w: w,
-    h: h,
+    w: w + 5,
+    h: h + 5,
   };
 }
 
 function updateCursor() {
-  if ("ontouchstart" in window || navigator.maxTouchPoints > 0) return; 
+  if ("ontouchstart" in window || navigator.maxTouchPoints > 0) return;
 
   let cursorOnText = false;
 

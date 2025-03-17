@@ -79,8 +79,8 @@ function endGame() {
   allow = false;
   score = (playerCircle / targetCircle) * 100;
 
-  if (Math.abs(playerCircle - targetCircle) <= 1) {
-    textAppear = "PERFECT!";
+  if (score >= 98.7 && score <= 100.5) {
+    textAppear = "MATCHED!";
     win = true;
   } else if (score % 100 >= 90) {
     textAppear = "SO CLOSE!";
