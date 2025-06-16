@@ -97,6 +97,15 @@ function draw() {
 }
 
 function touchStarted() {
+
+  if (touches.length > 0) {
+    const touch = touches[0];
+    const touchedElement = document.elementFromPoint(touch.x, touch.y);
+    if (!touchedElement || touchedElement.tagName.toLowerCase() !== "canvas" ) {
+      return; 
+    }
+  }
+
   if (state === "MENU") {
     state = "PLAYING";
     resetGame();
@@ -106,6 +115,7 @@ function touchStarted() {
   } else if (state === "PLAYING") {
     currentColorIdx = (currentColorIdx + 1) % colors.length;
   }
+
   return false;
 }
 
