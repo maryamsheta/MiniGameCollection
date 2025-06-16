@@ -6,12 +6,16 @@
   font-family: "Jersey 10";
 }
 
+html,
+body {
+  touch-action: none;
+}
+
 body {
   width: 100vw;
   height: 100vh;
   background: black;
   color: white;
-  overflow: hidden;
 }
 
 canvas {
