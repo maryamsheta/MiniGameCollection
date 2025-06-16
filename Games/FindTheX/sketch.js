@@ -81,7 +81,7 @@ function drawCells(rows, cols, randomRow, randomCol, found = false) {
       square(x, y, cellSize);
 
       if (row == randomRow && col == randomCol) {
-        fill(255);
+        fill(found ? "#00ff00" : "#ffffff");
         noStroke();
         text("X", x + cellSize / 2, y + cellSize / 2);
         cells.push({ x, y, cell: [row, col], size: cellSize, secret: true });

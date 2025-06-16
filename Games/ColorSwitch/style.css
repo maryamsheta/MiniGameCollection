@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Jersey 10";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: white;
+}
+
+canvas {
+  display: block;
+  position: relative;
+}
+
+i {
+  padding: 1rem;
+  position: absolute;
+  top: 10px;
+  color: #FFF;
+  font-size: 2rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.fa-arrow-left-long {
+  left: 10px;
+}
+
+.fa-refresh {
+  right: 10px;
+}
